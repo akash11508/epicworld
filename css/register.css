@@ -1,0 +1,115 @@
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0a2a2a;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 1px,
+            #0f3f3f 1px,
+            #0f3f3f 2px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 1px,
+            #0f3f3f 1px,
+            #0f3f3f 2px
+          ),url('/Image/Contact/bgbanner.png');
+            background-blend-mode: overlay, overlay, overlay, normal;
+        background-size: cover, 20px 20px, 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      a{
+        text-decoration: none;
+      }
+      .form-container {
+        background-color: #1a1a1a;
+        border-radius: 10px;
+        padding: 30px;
+        width: 300px;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .logo img {
+        width: 100px;
+      }
+      .registerHeader {
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .input-group {
+        margin-bottom: 15px;
+        position: relative;
+      }
+      .input-group i{
+        position: absolute;
+        right: 3%;
+        bottom: 30%;
+      }
+      .input-group input {
+        width: 95%;
+        padding: 10px;
+        border: none;
+        background-color: #2a2a2a;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+      .input-group input::placeholder {
+        color: #888;
+      }
+      .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        color: #888;
+      }
+      .checkbox-group input {
+        margin-right: 10px;
+      }
+      .register-btn {
+        width: 100%;
+        padding: 10px;
+       box-shadow: 0px 4px 4px 0px #00000040;
+background: linear-gradient(90deg, #008888 0%, #005331 100%);
+
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .login-link {
+        text-align: center;
+        margin-top: 15px;
+      }
+      .login-link span{
+        color: var(--textPrimaryColor);
+      }
+      .login-link a {
+        color: #008080;
+        text-decoration: none;
+      }
+      #login{
+        display: flex;
+        justify-content: center;
+      }
+    .loginpage{
+           padding: 10px 50px;
+    margin-top: 10px;
+    color: var(--textPrimaryColor);
+    background-color: #2a2a2a;
+    border-radius: 30px;
+    }

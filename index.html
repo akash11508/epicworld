@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/root.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>Epic World</title>
+  </head>
+  <body>
+    <div class="loader">
+      <span></span>
+    </div>
+
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./Image/epiclogo.svg" alt="Epic World Logo" />
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./register.html">REGISTRATION</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      class="hero-section"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-offset="0"
+      id="home"
+    >
+      <div class="container wrapper">
+        <h1
+          class="epic-world-header"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <span>Welcome</span>
+          <span class="gradient">To Epic World</span>
+        </h1>
+        <p class="epic-world-para">
+          Welcome to EPIC WORLD, We are committed to providing a seamless blend
+          of online and offline education solution that empower learners of all
+          ages to unlock their potential.
+        </p>
+        <div class="button-section">
+          <button class="login-btn">LOGIN</button>
+          <button class="login-btn">REGISTER</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cards">
+          <div
+            class="card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="card-icon trending">
+              <img src="./Image/cardimage.svg" alt="Trending Courses" />
+            </div>
+            <h3 class="cardHeader">Trending Courses</h3>
+            <p class="cardpara">
+              EPIC WORLD offers a range of trending courses that are carefully
+              curated to meet the demands of the ever-evolving job market.
+              Whether you're interested in digital technology, business
+              management, or creative arts.
+            </p>
+          </div>
+          <div
+            class="card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="card-icon library">
+              <img src="./Image/library.svg" alt="Books & Library" />
+            </div>
+            <h3 class="cardHeader">Books & Library</h3>
+            <p class="cardpara">
+              Our extensive digital library is a way to a world of knowledge.
+              Whether you're accessing resources online or visiting our physical
+              library, you'll find a vast collection of books, research
+              materials, and educational tools to support your academic journey.
+            </p>
+          </div>
+          <div
+            class="card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="card-icon teachers">
+              <img src="./Image/certified.svg" alt="Certified Teachers" />
+            </div>
+            <h3 class="cardHeader">Certified Teachers</h3>
+            <p class="cardpara">
+              At EPIC WORLD, we take pride in our highly qualified and certified
+              teaching staff. Our instructors are not only experts in their
+              respective fields, but they're also dedicated to providing a
+              supportive and enriching learning environment.
+            </p>
+          </div>
+          <div
+            class="card"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+            data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="card-icon certification">
+              <img src="./Image/certificate.png" alt="Certification" />
+            </div>
+            <h3 class="cardHeader">Certification</h3>
+            <p class="cardpara">
+              EPIC WORLD's courses are not just about acquiring knowledge;
+              they're about earning valuable certifications that will set you on
+              a path to success. We offer a range of industry-recognized
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- aboutus -->
+    <style>
+      .fade-in {
+        transform: translateY(40%);
+        transition: all 1s ease-out;
+      }
+    </style>
+    <section
+      class="AboutUsSection fade-in"
+      data-aos="flip-up"
+      data-aos-duration="1500"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-offset="0"
+      id="about"
+    >
+      <div class="container">
+        <div class="aboutSection">
+          <h3 class="About">About Us</h3>
+        </div>
+        <div class="aboutMainSection">
+          <div class="aboutContent">
+            <div class="aboutInfo">
+              <h3 class="infoHeader">
+                <span class="gradient">Welcome</span>
+                <span class="newGradient">To Epic World</span>
+              </h3>
+              <p class="infoContent">
+                At EPIC WORLD, we believe that education is not just about
+                acquiring knowledge; it's about inspiring a passion for
+                learning. Our institution has been a pillar of the educational
+                community for many years, delivering high-quality educational
+                services to students from diverse backgrounds.
+              </p>
+            </div>
+            <div class="aboutInfo">
+              <h3 class="infoHeader">
+                <span class="newGradient">Our</span>
+                <span class="gradient">History</span>
+              </h3>
+              <p class="infoContent">
+                EPIC WORLD has a rich history of fostering learning and
+                innovation. Founded in 2023, we have consistently evolved to
+                meet the changing needs of our students. From humble beginnings,
+                we have grown to become a respected institution in the field of
+                education.
+              </p>
+            </div>
+            <div class="aboutInfo">
+              <h3 class="infoHeader">
+                <span class="newGradient">Our</span>
+                <span class="gradient">Mission</span>
+              </h3>
+              <p class="infoContent">
+                Our mission is to provide accessible, high-quality education
+                that empowers individuals to excel in their chosen fields. We
+                are committed to equipping our students with the skills and
+                knowledge they need to thrive in an ever-changing world.
+              </p>
+            </div>
+            <div class="aboutInfo">
+              <h3 class="infoHeader">
+                <span class="newGradient">Our</span>
+                <span class="gradient">Vision</span>
+              </h3>
+              <p class="infoContent">
+                EPIC WORLD envisions a future where education transcends
+                boundaries. Our vision is to be a global leader in innovative
+                education, where both online and offline resources merge
+                seamlessly to create a dynamic learning experience.
+              </p>
+            </div>
+          </div>
+          <div class="aboutimg">
+            <figure class="aboutFigure">
+              <img
+                src="./Image/aboutImg.png"
+                alt="Rotating Earth"
+                class="rotatingEarth"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- aboutusend -->
+
+    <!-- achivementstart -->
+    <section id="">
+      <div class="container">
+        <div
+          class="achievement-board"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          data-aos-easing="linear"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <h1 class="achieve">Achievement</h1>
+          <p class="description">
+            EPIC WORLD takes pride in the accomplishments of our students and
+            the recognition our institution has received over the years. Our
+            achievements are a testament to our commitment to excellence in
+            education.
+          </p>
+          <div class="graph-container">
+            <div class="graph">
+              <img src="./Image/bars.png" alt="" />
+            </div>
+          </div>
+          <div style="position: relative">
+            <div class="arrow-down">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 5V19M12 19L19 12M12 19L5 12"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="stats">
+              <div class="stat-item">
+                <h2>60</h2>
+                <p>TEACHER</p>
+              </div>
+              <div class="stat-item">
+                <h2>40</h2>
+                <p>COURSES</p>
+              </div>
+              <div class="stat-item">
+                <h2>900</h2>
+                <p>STUDENTS</p>
+              </div>
+              <div class="stat-item">
+                <h2>3675</h2>
+                <p>SATISFIED CLIENT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- achivementend -->
+
+    <!-- teamsectionstart -->
+
+    <!-- teamsectionstart -->
+    <section>
+      <div
+        class="container"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-easing="linear"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        <div class="testimonial-container">
+          <div class="testimonial-header-line">
+            <div class="line"></div>
+            <div class="testName">Testimonial</div>
+            <div class="line"></div>
+          </div>
+          <div class="testimonial-section">
+            <h1>
+              <span class="gradient">Exceptional</span>
+              <span class="newGradient">User Satisfaction</span>
+            </h1>
+            <p class="subtitle">
+              Discover what our students, alumni, and partners have to say about
+              their experiences with Epic World. Read testimonials and success
+              stories that showcase the impact of our educational services on
+              their lives and careers.
+            </p>
+            <div class="carousel-container">
+              <div class="slick-slider">
+                <!-- Testimonial cards will be dynamically inserted here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faqsection -->
+
+    <section
+      class="faq"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-easing="linear"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
+      <div class="container">
+        <div
+          class="d-flex align-items-center gap-3"
+          style="padding-bottom: 20px"
+        >
+          <div class="getKnow">Get to Know</div>
+          <div class="gradient-line"></div>
+        </div>
+
+        <div class="faqSection">
+          <div class="left-column">
+            <h1>
+              <span class="gradient">Frequently</span>
+              <span class="newGradient">Asked</span>
+            </h1>
+            <p>
+              These FAQs are designed to address common questions and provide
+              helpful information to prospective and current students of
+              Epic-World. Feel free to reach out to us if you have any other
+              questions!
+            </p>
+            <button class="get-started">Get Started</button>
+          </div>
+          <div class="right-column">
+            <div class="faq-item">
+              What types of courses does Epic-World offer?
+            </div>
+            <div class="faq-content">
+              <p>
+                Epic-World offers a wide variety of courses in different fields,
+                including technology, business, design, and personal
+                development.
+              </p>
+            </div>
+
+            <div class="faq-item">Are the courses self-paced?</div>
+            <div class="faq-content">
+              <p>
+                Most of our courses only require a standard web browser and
+                internet connection. Specific courses may require additional
+                software, which will be mentioned in the course description.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              Do I need any special software or equipment to take the courses?
+            </div>
+            <div class="faq-content">
+              <p>
+                Epic-World offers a wide variety of courses in different fields,
+                including technology, business, design, and personal
+                development.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              Does Epic-World offer any group or corporate training programs?
+            </div>
+            <div class="faq-content">
+              <p>
+                Most of our courses only require a standard web browser and
+                internet connection. Specific courses may require additional
+                software, which will be mentioned in the course description.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-buttons">
+          <div>
+            <h3 class="better">Build Better, Build Faster</h3>
+          </div>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="app-button">
+              <img src="./Image/Team/google-play.png" alt="Google Play" />
+              <p class="btnText">
+                <span class="text">GET IT ON</span> <br />
+                GOOGLE PLAY
+              </p>
+            </button>
+            <button class="app-button">
+              <img src="./Image/Team/apple-logo.png" alt="App Store" />
+              <p class="btnText">
+                <span class="text">DOWNLOAD ON THE</span> <br />
+                APP STORE
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faqsectioinend -->
+
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="footer">
+          <div class="logo">
+            <img src="./Image/epiclogo.svg" alt="Epic World Logo" />
+          </div>
+          <div class="copyright">
+            &copy; <span id="current-year"></span> EPIC WORLD. All Rights
+            Reserved.
+          </div>
+          <div class="social-icons">
+            <a href="#" title="Facebook" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" title="Instagram" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    // Testimonial data
+    const testimonials = [
+      {
+        name: "John M",
+        rating: 5,
+        image: "./Image/Team/user.png",
+        text: "I am a frequent visitor to the Epic World library, and it's a treasure trove of knowledge. The online and offline resources are fantastic for research, and the staff is always helpful. My only suggestion would be to expand the physical library even more.",
+      },
+      {
+        name: "David L.",
+        rating: 5,
+        image: "./Image/Team/user2.png",
+        text: "EPIC WORLD's online courses are great for self-paced learning. The platform is user- friendly, and the content is up-to-date. However, I'd love to see more interactive features in their online courses to enhance the learning experience.",
+      },
+      {
+        name: "Sophie K.",
+        rating: 5,
+        image: "./Image/Team/user3.png",
+        text: "I attended one of EPIC WORLD's events, and it was truly inspiring. The knowledge- sharing and networking opportunities were priceless. I left with a renewed sense of motivation and a network of like-minded individuals.",
+      },
+      {
+        name: "Tina R",
+        rating: 5,
+        image: "./Image/Team/user4.png",
+        text: "EPIC WORLD is a game-changer in the education industry. Their trending courses are top-notch, covering the most relevant topics in today's job market. The instructors are highly knowledgeable, and the certification programs truly open doors to new opportunities.",
+      },
+      {
+        name: "Mayur R.",
+        rating: 5,
+        image: "./Image/Team/user5.png",
+        text: "EPIC WORLD is a game-changer in the education industry. Their trending courses are top-notch, covering the most relevant topics in today's job market. The instructors are highly knowledgeable, and the certification programs truly open doors to new opportunities.",
+      },
+      {
+        name: "Maria S.",
+        rating: 5,
+        image: "./Image/Team/user6.png",
+        text: "EPIC WORLD's certified teachers are the real deal. They're not just educators; they're mentors who genuinely care about your success. I recently completed a course with them, and the guidance and support I received were exceptional.",
+      },
+      {
+        name: "Jeremy Y",
+        rating: 5,
+        image: "./Image/Team/user7.png",
+        text: "I cannot express enough how transformative my experience with Epic-World has been. As an educator constantly seeking innovative ways to engage my students and enhance their learning experience.",
+      },
+      {
+        name: "Sheena B.",
+        rating: 5,
+        image: "./Image/Team/user8.png",
+        text: "I am a frequent visitor to the Epic World library, and it's a treasure trove of knowledge. The online and offline resources are fantastic for research, and the staff is always helpful. My only suggestion would be to expand the physical library even more.",
+      },
+      // ... add more testimonials here
+    ];
+
+    // Function to create testimonial cards
+    function createTestimonialCard(testimonial) {
+      return `
+              <div class="testimonial-card">
+                  <div class="testimonial-header">
+                      <div class="avatar">
+                          <img src="${testimonial.image}" alt="${
+        testimonial.name
+      }">
+                      </div>
+                      <div class="name-rating">
+                          <h3>${testimonial.name}</h3>
+                          <div class="rating">${"★".repeat(
+                            testimonial.rating
+                          )}</div>
+                      </div>
+                  </div>
+                  <p class="testimonialInfo">${testimonial.text}</p>
+              </div>
+          `;
+    }
+
+    // Initialize slick carousel
+    $(document).ready(function () {
+      const $slider = $(".slick-slider");
+
+      // Populate slider with testimonial cards
+      testimonials.forEach((testimonial) => {
+        $slider.append(createTestimonialCard(testimonial));
+      });
+
+      // Initialize slick
+      $slider.slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+            },
+          },
+        ],
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const content = item.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+            item.classList.remove("active");
+          } else {
+            content.style.display = "block";
+            item.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
+  <!-- ------------------------------------- preloader---------------------- -->
+  <script>
+    window.addEventListener("load", function () {
+      // Hide the preloader
+      const preloader = document.getElementById("preloader");
+      preloader.style.opacity = "0"; // Fade out the preloader
+      setTimeout(function () {
+        preloader.style.display = "none"; // Hide the preloader completely
+      }, 10000); // 600ms should match the CSS transition duration
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+    });
+  </script>
+
+  <!-- ------------------------------------- loader ------------------------------------- -->
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.getElementById("loader");
+      loader.classList.add("hidden");
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // Match this duration to the CSS transition duration
+    });
+  </script>
+</html>

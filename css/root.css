@@ -1,0 +1,86 @@
+ :root {
+      --gradientColor: linear-gradient(90deg, #28F19C 0%, #00B2E3 100%);
+      --newGradientColor:linear-gradient(90deg, #FFFFFF 0%, #999999 100%);
+      --textPrimaryColor:#fff;
+      --backgroundColor:#0d1413;
+      --graphShadow:0 0 20px rgba(0,255,225,0.5);
+      --arrowBackgeound: #424342;
+      --arrowBorder:1px solid #999292;
+      --borderTop:1px solid #e2dede;
+      --borderBottom:#fff;
+      --textSecoundaryColor:#00FFE1;
+      --textColor:#666;
+      --lineGradient:linear-gradient(90deg, #ffffff 0%, rgba(153, 153, 153, 0) 100%);
+    }
+
+
+.loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 25px 75px rgba(0,0,0,0.55);
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  background: transparent;
+  border: 1px dashed#444;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+  inset 5px 5px 35px rgba(0,0,0,0.25);
+}
+
+.loader::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px dashed#444;
+  box-shadow: inset -5px -5px 25px rgba(0,0,0,0.25),
+  inset 5px 5px 35px rgba(0,0,0,0.25);
+}
+
+.loader span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  transform-origin: top left;
+  animation: radar81 2s linear infinite;
+  border-top: 1px dashed #fff;
+}
+
+.loader span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: seagreen;
+  transform-origin: top left;
+  transform: rotate(-55deg);
+  filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
+}
+
+@keyframes radar81 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

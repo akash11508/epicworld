@@ -1,0 +1,63 @@
+/* nav */
+@media (max-width: 768px) {
+ .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0A1512;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+  .cards{
+    flex-direction: column;
+  }
+  .aboutMainSection{
+    flex-direction: column-reverse;
+  }
+
+   .graph img{
+        width: 100%;
+    }
+    .arrow-down{
+        left:46%;
+    }
+    .achieve {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+    
+   
+    .bar {
+        width: 30px;
+        margin: 0 5px;
+    }
+    
+    .stat-item h2 {
+        font-size: 24px;
+    }
+    
+    .stat-item p {
+        font-size: 10px;
+    }
+}
